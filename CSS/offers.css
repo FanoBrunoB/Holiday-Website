@@ -1,0 +1,79 @@
+.title{
+    margin: 2em 10rem;
+}
+
+.main{
+    margin-bottom: 7rem;
+}
+
+.carousel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-left: 10rem;
+    width: 75%;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.05rem solid black;
+    padding: 0 0 1.2rem 0;
+    background-color: whitesmoke;
+}
+
+.discount-badge{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: crimson;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card .text{
+ padding:1.05rem ;
+ font-weight: bold;
+ font-size: x-large;
+}
+.card p{
+ padding:1.05rem ;
+ font-weight: 600;
+ 
+ font-size: medium;
+}
+.card ul{
+    list-style: none;
+}
+.card li{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.card img{
+   width: 100%;
+    height: 14.5rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-btn{
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0.7rem;
+    background-color: #36064d;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card-btn:hover{
+    opacity: 0.9;
+}
