@@ -1,0 +1,54 @@
+.title{
+    margin: 2em 10rem;
+}
+
+.carousel{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 10rem;
+    overflow: hidden;
+    width: 75%;
+    justify-content: start;
+}
+
+.card{
+ border-radius: 1rem;
+ display: flex;
+ border: 0.05rem solid black;
+ width: auto;
+ height: auto;
+ flex-wrap: wrap;
+    padding: 0 0 1.2rem 0 ;
+    margin: 1.1rem;
+    animation: carousel infinite linear 50s 0.3s;
+    background-color: whitesmoke;
+}
+.card .text{
+ padding:1.05rem ;
+ font-weight: bold;
+ font-size: x-large;
+}
+.card p{
+ padding:1.05rem ;
+ font-weight: 600;
+ 
+ font-size: medium;
+}
+.card img{
+    width: 17.5rem;
+    border-radius: 1rem 1rem 0 0;
+    height: 14.5rem;
+    
+    object-fit: cover;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-1340%);
+    }
+}
+
