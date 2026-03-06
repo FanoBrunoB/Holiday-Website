@@ -19,7 +19,7 @@ body{
 /* Hero Section */
 
 .heroSection{
-    padding: 100px 0px;
+    padding: 6.25rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,12 +29,12 @@ body{
 .heroSection > h1{
   z-index: 1;
   font-family: 'Playfair Display', serif;
-  font-size: clamp(52px, 8vw, 96px);
+  font-size: clamp(3.25rem, 8vw, 6rem);
   font-weight: 900;
   color: var(--secondaryColor);
   text-align: center;
   line-height: 1;
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
 
   opacity: 0;
   animation: fadeUp 0.7s 0.1s ease forwards;
@@ -44,13 +44,13 @@ body{
   position: relative;
   z-index: 1;
   font-family: 'DM Sans', sans-serif;
-  font-size: clamp(14px, 2vw, 17px);
+  font-size: clamp(0.875rem, 2vw, 1.0625rem);
   font-weight: 400;
   color: var(--secondaryColor);
   opacity: 0;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 0 0 60px;
+  margin: 0 0 3.75rem;
 
   animation: fadeUp 0.7s 0.3s ease forwards;
 }
@@ -58,8 +58,8 @@ body{
 .infoCardGrid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
-    padding: 20px;
+    gap: 6.25rem;
+    padding: 1.25rem;
 }
 
 .heroSection a{
@@ -69,20 +69,20 @@ body{
 
 .infoCard{
     
-    max-width: 200px;
-    padding: 20px;
+    max-width: 12.5rem;
+    padding: 1.25rem;
     background-color: var(--mainColor);
     color: var(--secondaryColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     text-align: center;
-    box-shadow: 0 4px 8px var(--backgroundShadow);
+    box-shadow: 0 0.25rem 0.5rem var(--backgroundShadow);
     transition: all 0.3s ease;
 }
 
 
 .infoCard:hover{
-    transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 52px var(--backgroundShadowHover);
+    transform: translateY(-0.5rem) scale(1.02);
+  box-shadow: 0 1.25rem 3.25rem var(--backgroundShadowHover);
 }
 
 .infoCardContent{
@@ -93,17 +93,17 @@ body{
 .infoCardBtn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   align-self: flex-start;
   margin-top: auto;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   color: var(--secondaryColor);
 
   background: rgba(255, 255, 255, 0.35);
   border: none;
-  padding: 9px 18px;
+  padding: 0.5625rem 1.125rem;
   border-radius: 999px;
   cursor: pointer;
   text-decoration: none;
@@ -116,14 +116,14 @@ body{
 }
 .infoCard:hover .infoCardBtn {
   background: rgba(255, 255, 255, 0.55);
-  gap: 14px;
+  gap: 0.875rem;
 }
 .infoCard:hover .infoCardBtn::after {
-  transform: translateX(3px);
+  transform: translateX(0.1875rem);
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
+  from { opacity: 0; transform: translateY(1.5rem); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
