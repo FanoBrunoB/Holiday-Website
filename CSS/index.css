@@ -1,41 +1,73 @@
-:root{
-    --backgroundColor: #F7F6E5;
-    --mainColor: #76D2DB;
-    --mainColorDark: #4B9EA8;
-    --secondaryColor: #36064D;
-    --backgroundShadow: rgba(0, 0, 0, 0.25);
-    --backgroundShadowHover: rgba(0, 0, 0, 0.35);
-    --whiteColor: white;
+:root {
+  --backgroundColor: #f7f6e5;
+  --mainColor: #76d2db;
+  --mainColorDark: #4b9ea8;
+  --secondaryColor: #36064d;
+  --backgroundShadow: rgba(0, 0, 0, 0.25);
+  --backgroundShadowHover: rgba(0, 0, 0, 0.35);
+  --whiteColor: white;
 }
 
-body{
-    background-color: var(--backgroundColor);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+body {
+  background-color: var(--backgroundColor);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0rem;
+  padding: 0;
+  color: var(--secondaryColor);
+
+  section{
+    margin: 8rem;
+  }
 }
 
 .main-nav{
     display: flex;
     background-color: var(--secondaryColor);
-    justify-content: space-around;
+    justify-content: space-around;}
     
+h1 {
+  margin-left: 10rem;
 }
 
-.main-item{
-    display: flex;
-    gap: 1rem;
+.destination-container {
+  background-color: var(--backgroundShadow);
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  gap: 2rem;
+  justify-items: center;
+  padding: 0rem 0 2rem 0;
+  border-radius: 1rem;
+  width: 90%;
+  margin-left: 5%;
+
+  hr {
+    height: 6rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  input {
+    height: 2rem;
+    font-size: 1.25rem;
+  }
+
+  input[type="text"] {
+    width: 13rem;
+  }
 }
 
-.item{
-    font-size: 1.8rem;
-    color: var(--whiteColor);
-    padding: 1rem;
+.destination-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 18rem;
 }
 
-.item a{
-    color: var(--whiteColor);   
-    text-decoration: none;
+.destination-date-picker {
+  width: 18rem;
 }
 
 .item:hover{
@@ -71,4 +103,146 @@ footer ul {
 }
 footer li {
     padding: 0.3rem;
+}
+/* Hero Section */
+
+.heroSection {
+  padding: 6.25rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroSection > h1 {
+  z-index: 1;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3.25rem, 8vw, 6rem);
+  font-weight: 900;
+  color: var(--secondaryColor);
+  text-align: center;
+  line-height: 1;
+  margin: 0 0 1.25rem;
+
+  opacity: 0;
+  animation: fadeUp 0.7s 0.1s ease forwards;
+}
+
+.heroSection > h3 {
+  position: relative;
+  z-index: 1;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(0.875rem, 2vw, 1.0625rem);
+  font-weight: 400;
+  color: var(--secondaryColor);
+  opacity: 0;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 3.75rem;
+
+  animation: fadeUp 0.7s 0.3s ease forwards;
+}
+
+.infoCardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.25rem;
+  padding: 1.25rem;
+}
+
+.heroSection a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.infoCard {
+  max-width: 12.5rem;
+  padding: 1.25rem;
+  background-color: var(--mainColor);
+  color: var(--secondaryColor);
+  border-radius: 0.625rem;
+  text-align: center;
+  box-shadow: 0 0.25rem 0.5rem var(--backgroundShadow);
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-0.5rem) scale(1.02);
+  box-shadow: 0 1.25rem 3.25rem var(--backgroundShadowHover);
+}
+
+.infoCardContent {
+  text-decoration: none;
+  color: inherit;
+}
+
+.infoCardBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  margin-top: auto;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--secondaryColor);
+
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  padding: 0.5625rem 1.125rem;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition:
+    all 0.2s ease,
+    gap 0.25s ease;
+}
+.infoCardBtn::after {
+  content: "→";
+  transition: transform 0.25s ease;
+}
+.infoCard:hover .infoCardBtn {
+  background: rgba(255, 255, 255, 0.55);
+  gap: 0.875rem;
+}
+.infoCard:hover .infoCardBtn::after {
+  transform: translateX(0.1875rem);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-nav {
+  display: flex;
+  background-color: var(--secondaryColor);
+  justify-content: space-between;
+}
+
+.main-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.item {
+  font-size: 1.8rem;
+  color: var(--whiteColor);
+  padding: 1rem;
+}
+
+.item a {
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+.item:hover {
+  text-decoration: underline;
 }
