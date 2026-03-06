@@ -15,9 +15,15 @@ body {
   padding: 0;
   color: var(--secondaryColor);
 
-  section{
+  section {
     margin: 8rem;
   }
+}
+
+.main-nav {
+  display: flex;
+  background-color: var(--secondaryColor);
+  justify-content: space-around;
 }
 
 h1 {
@@ -65,6 +71,40 @@ h1 {
   width: 18rem;
 }
 
+.item:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  background-color: var(--secondaryColor);
+  justify-content: space-around;
+  color: var(--whiteColor);
+  align-items: center;
+  text-align: center;
+}
+.footer-div {
+  flex: 1;
+  padding: 2rem;
+}
+footer h3 {
+  font-size: 1.8rem;
+}
+
+footer p {
+  max-width: 20rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+footer li {
+  padding: 0.3rem;
+}
 /* Hero Section */
 
 .heroSection {
