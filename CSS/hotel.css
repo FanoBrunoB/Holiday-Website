@@ -1,0 +1,52 @@
+.destinationSection{
+    margin-top: 0;
+}
+
+.title{
+    margin: 5rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searchInput {
+    justify-self: center;
+    align-self  : center;
+    margin: 0 0rem;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 1.2rem; ;
+    width: 80%;
+    height: 2rem;
+    font-size: 1.25rem;
+    background-color: var(--whiteColor);
+}
+
+.hotelCardsGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.hotelcard{
+    background-color: var(--mainColor);
+    box-shadow: 0 0.25rem 0.5rem var(--backgroundShadow);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 50%;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hotelcard:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
