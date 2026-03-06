@@ -1,34 +1,83 @@
-:root{
-    --backgroundColor: #F7F6E5;
-    --mainColor: #76D2DB;
-    --mainColorDark: #4B9EA8;
-    --secondaryColor: #36064D;
-    --backgroundShadow: rgba(0, 0, 0, 0.25);
-    --backgroundShadowHover: rgba(0, 0, 0, 0.35);
-    --whiteColor: white;
+:root {
+  --backgroundColor: #f7f6e5;
+  --mainColor: #76d2db;
+  --mainColorDark: #4b9ea8;
+  --secondaryColor: #36064d;
+  --backgroundShadow: rgba(0, 0, 0, 0.25);
+  --backgroundShadowHover: rgba(0, 0, 0, 0.35);
+  --whiteColor: white;
 }
 
-body{
-    background-color: var(--backgroundColor);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--secondaryColor);
+body {
+  background-color: var(--backgroundColor);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0rem;
+  padding: 0;
+  color: var(--secondaryColor);
+
+  section{
+    margin: 8rem;
+  }
+}
+
+h1 {
+  margin-left: 10rem;
+}
+
+.destination-container {
+  background-color: var(--backgroundShadow);
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  gap: 2rem;
+  justify-items: center;
+  padding: 0rem 0 2rem 0;
+  border-radius: 1rem;
+  width: 90%;
+  margin-left: 5%;
+
+  hr {
+    height: 6rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  input {
+    height: 2rem;
+    font-size: 1.25rem;
+  }
+
+  input[type="text"] {
+    width: 13rem;
+  }
+}
+
+.destination-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 18rem;
+}
+
+.destination-date-picker {
+  width: 18rem;
 }
 
 /* Hero Section */
 
-.heroSection{
-    padding: 6.25rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.heroSection {
+  padding: 6.25rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.heroSection > h1{
+.heroSection > h1 {
   z-index: 1;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(3.25rem, 8vw, 6rem);
   font-weight: 900;
   color: var(--secondaryColor);
@@ -43,7 +92,7 @@ body{
 .heroSection > h3 {
   position: relative;
   z-index: 1;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: clamp(0.875rem, 2vw, 1.0625rem);
   font-weight: 400;
   color: var(--secondaryColor);
@@ -55,39 +104,37 @@ body{
   animation: fadeUp 0.7s 0.3s ease forwards;
 }
 
-.infoCardGrid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6.25rem;
-    padding: 1.25rem;
+.infoCardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.25rem;
+  padding: 1.25rem;
 }
 
-.heroSection a{
-    text-decoration: none;
-    color: inherit;
+.heroSection a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.infoCard{
-    
-    max-width: 12.5rem;
-    padding: 1.25rem;
-    background-color: var(--mainColor);
-    color: var(--secondaryColor);
-    border-radius: 0.625rem;
-    text-align: center;
-    box-shadow: 0 0.25rem 0.5rem var(--backgroundShadow);
-    transition: all 0.3s ease;
+.infoCard {
+  max-width: 12.5rem;
+  padding: 1.25rem;
+  background-color: var(--mainColor);
+  color: var(--secondaryColor);
+  border-radius: 0.625rem;
+  text-align: center;
+  box-shadow: 0 0.25rem 0.5rem var(--backgroundShadow);
+  transition: all 0.3s ease;
 }
 
-
-.infoCard:hover{
-    transform: translateY(-0.5rem) scale(1.02);
+.infoCard:hover {
+  transform: translateY(-0.5rem) scale(1.02);
   box-shadow: 0 1.25rem 3.25rem var(--backgroundShadowHover);
 }
 
-.infoCardContent{
-    text-decoration: none;
-    color: inherit;
+.infoCardContent {
+  text-decoration: none;
+  color: inherit;
 }
 
 .infoCardBtn {
@@ -108,10 +155,12 @@ body{
   cursor: pointer;
   text-decoration: none;
 
-  transition: all 0.2s ease, gap 0.25s ease;
+  transition:
+    all 0.2s ease,
+    gap 0.25s ease;
 }
 .infoCardBtn::after {
-  content: '→';
+  content: "→";
   transition: transform 0.25s ease;
 }
 .infoCard:hover .infoCardBtn {
@@ -123,33 +172,38 @@ body{
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(1.5rem); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.main-nav{
-    display: flex;
-    background-color: var(--secondaryColor);
-    justify-content: space-between;
-    
+.main-nav {
+  display: flex;
+  background-color: var(--secondaryColor);
+  justify-content: space-between;
 }
 
-.main-item{
-    display: flex;
-    gap: 1rem;
+.main-item {
+  display: flex;
+  gap: 1rem;
 }
 
-.item{
-    font-size: 1.8rem;
-    color: var(--whiteColor);
-    padding: 1rem;
+.item {
+  font-size: 1.8rem;
+  color: var(--whiteColor);
+  padding: 1rem;
 }
 
-.item a{
-    color: var(--whiteColor);   
-    text-decoration: none;
+.item a {
+  color: var(--whiteColor);
+  text-decoration: none;
 }
 
-.item:hover{
-    text-decoration: underline;
+.item:hover {
+  text-decoration: underline;
 }
