@@ -13,32 +13,32 @@
 }
 
 .card{
- border-radius: 15px;
+ border-radius: 1rem;
  display: flex;
- border: 1px solid black;
- width: 250px;
+ border: 0.05rem solid black;
+ width: auto;
  height: auto;
  flex-wrap: wrap;
-    padding: 0 0 10px 0 ;
-    margin: 10px;
-    animation: carousel infinite linear 75s 0.3s;
+    padding: 0 0 1.2rem 0 ;
+    margin: 1.1rem;
+    animation: carousel infinite linear 50s 0.3s;
     background-color: whitesmoke;
 }
 .card .text{
- padding:10px ;
+ padding:1.05rem ;
  font-weight: bold;
  font-size: x-large;
 }
 .card p{
- padding:10px ;
+ padding:1.05rem ;
  font-weight: 600;
  
  font-size: medium;
 }
 .card img{
-    width: 250px;
-    border-radius: 15px 15px 0 0;
-    height: 200px;
+    width: 17.5rem;
+    border-radius: 1rem 1rem 0 0;
+    height: 14.5rem;
     
     object-fit: cover;
 }
@@ -48,7 +48,7 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-1295%);
+        transform: translateX(-1340%);
     }
 }
 
