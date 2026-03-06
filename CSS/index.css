@@ -10,6 +10,51 @@
 body{
     background-color: var(--backgroundColor);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    margin: 8rem;
     padding: 0;
+}
+
+h1{
+    margin-left: 10rem;
+}
+
+.destination-container{
+    background-color: var(--backgroundShadow);
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    gap: 2rem;
+    justify-items: center;
+    padding: 0rem 0 2rem 0;
+    border-radius: 1rem;
+    width: 90%;
+    margin-left: 5%;
+
+    hr{
+        height: 6rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
+    input{
+        height: 2rem;
+        font-size: 1.25rem;
+    }
+
+    input[type="text"] {
+        width: 13rem;
+    }
+}
+
+.destination-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 18rem;
+}
+
+.destination-date-picker{
+    width: 18rem;
 }
