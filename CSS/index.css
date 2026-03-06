@@ -35,7 +35,8 @@ h1 {
 }
 
 .destination-container {
-  background-color: var(--backgroundShadow);
+  background-color: var(--mainColor);
+  box-shadow: 0 0.25rem 0.5rem var(--backgroundShadow);
   display: grid;
   grid-template-columns: 3fr 1fr 3fr;
   gap: 2rem;
@@ -54,12 +55,15 @@ h1 {
   }
 
   input {
+    border: 2px solid var(--secondaryColor);
+    border-radius: 1.2rem; ;
     height: 2rem;
     font-size: 1.25rem;
   }
 
   input[type="text"] {
     width: 13rem;
+    background-color: var(--whiteColor);
   }
 }
 
