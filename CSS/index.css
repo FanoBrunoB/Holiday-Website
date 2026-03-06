@@ -5,6 +5,7 @@
     --secondaryColor: #36064D;
     --backgroundShadow: rgba(0, 0, 0, 0.25);
     --backgroundShadowHover: rgba(0, 0, 0, 0.35);
+    --whiteColor: white;
 }
 
 body{
@@ -124,4 +125,31 @@ body{
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+.main-nav{
+    display: flex;
+    background-color: var(--secondaryColor);
+    justify-content: space-between;
+    
+}
+
+.main-item{
+    display: flex;
+    gap: 1rem;
+}
+
+.item{
+    font-size: 1.8rem;
+    color: var(--whiteColor);
+    padding: 1rem;
+}
+
+.item a{
+    color: var(--whiteColor);   
+    text-decoration: none;
+}
+
+.item:hover{
+    text-decoration: underline;
 }
