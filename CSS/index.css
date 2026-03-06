@@ -8,6 +8,10 @@
   --whiteColor: white;
 }
 
+*{
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--backgroundColor);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
