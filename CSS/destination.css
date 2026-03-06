@@ -52,3 +52,37 @@
     }
 }
 
+.flights{
+    margin: 2em 14rem 2rem 10em;
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+    border: 0.05rem solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 0.6rem;
+    padding: 0.5rem 1rem;
+    background-color: whitesmoke;
+}
+
+.rows img{
+    height: 3rem;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+.rows{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    font-size: large;
+}
+
+.rows:hover{
+    transform: scale(1.01);
+    transition: 200ms;
+}
