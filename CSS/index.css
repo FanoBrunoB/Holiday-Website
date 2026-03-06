@@ -11,9 +11,13 @@
 body {
   background-color: var(--backgroundColor);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 8rem;
+  margin: 0rem;
   padding: 0;
   color: var(--secondaryColor);
+
+  section{
+    margin: 8rem;
+  }
 }
 
 h1 {
