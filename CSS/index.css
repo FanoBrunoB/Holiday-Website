@@ -1,0 +1,8 @@
+:root{
+    --backgroundColor: #F7F6E5;
+    --mainColor: #76D2DB;
+    --mainColorDark: #4B9EA8;
+    --secondaryColor: #36064D;
+    --backgroundShadow: rgba(0, 0, 0, 0.25);
+    --backgroundShadowHover: rgba(0, 0, 0, 0.35);
+}
